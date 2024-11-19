@@ -274,7 +274,7 @@
 
 <body>
     <div class="container">
-        <h1>俺婚<br>≪ご新規様≫<br>予約フォーム</h1>
+        <h1>俺婚<br>≪リピーター様≫<br>予約フォーム</h1>
         <div class="label">お客様名</div>
         <input type="text" id="name" placeholder="お名前を入力してください">
 
@@ -341,7 +341,7 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             liff.init({
-                liffId: ''
+                liffId: '2006587389-oQKy3x7R'
             }).then(() => {
                 console.log('LIFF初期化成功');
             }).catch((err) => {
@@ -588,8 +588,8 @@
             };
 
             // フォームデータのチェック
-            if (!formData.name || !formData.phone || !formData.selectedSymptom) {
-                alert('お名前・電話番号・メニューすべてご記入ください。');
+            if (!formData.name) {
+                alert('お名前');
                 return;
             }
 
@@ -628,7 +628,7 @@
                 return;
             }
 
-            const url = 'https://script.google.com/macros/s/AKfycbwCxnJaxGZ46c3TnnesuZcD_zuxuVoSHoDHo5MxkRzChcK5vZDwBs4HstzkXO-KLyuDYA/exec' +
+            const url = 'https://script.google.com/macros/s/AKfycbwkVyLAiENplfo7uOWAzHgTzFdZfERVYx2luDFEw9241DboECFZQlAvfmZwHGxczPEI/exec' +
                 `?startTime=${startTime.toISOString()}&endTime=${endTime.toISOString()}`;
 
             try {
